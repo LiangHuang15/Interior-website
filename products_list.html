@@ -1,0 +1,347 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <!-- Font -->
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;1,300&display=swap"
+      rel="stylesheet"
+    />
+    <!-- Link Css -->
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/normalize/8.0.1/normalize.min.css"
+      integrity="sha512-NhSC1YmyruXifcj/KFRWoC561YpHpc5Jtzgvbuzx5VozKpWvQ+4nXhPdFgmx8xqexRcpAglTj9sIBWINXa8x5w=="
+      crossorigin="anonymous"
+      referrerpolicy="no-referrer"
+    />
+
+    <link rel="stylesheet" href="./assets/css/base.css" />
+    <link rel="stylesheet" href="./assets/css/product_list.css" />
+    <!-- Font Awesome -->
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.1/css/all.min.css"
+    />
+  </head>
+  <body>
+    <div class="app">
+      <!-- Header -->
+      <header class="header">
+        <div class="header-top grid">
+          <a class="header-logo" href="/">
+            <span>L</span>ien <span>N</span>guyen
+          </a>
+          <div class="header-nav">
+            <ul id="header-nav-list" class="header-nav-list">
+              <li class="header-nav-item header-nav-item--active">
+                <a href="">Trang CHỦ</a>
+              </li>
+              <li class="header-nav-item header-nav-item-has-list">
+                <a href="">DANH MỤC <i class="fas fa-caret-down"></i></a>
+                <ul class="header-dropdown-list">
+                  <li class="dropdown-item"><a href="">CỬA KÍnh </a></li>
+                  <li class="dropdown-item"><a href="">CỬA KÍNH</a></li>
+                  <li class="dropdown-item">
+                    <a href="">NHÀ XƯỞNG KẾT CẤU</a>
+                  </li>
+                  <li class="dropdown-item"><a href="">CỬA KÍNH</a></li>
+                  <li class="dropdown-item"><a href="">CỬA KÍNH</a></li>
+                </ul>
+              </li>
+              <li class="header-nav-item"><a href="#footer">LIÊN HỆ</a></li>
+              <li class="header-nav-item"><a href="">VỀ CHÚNG TÔI</a></li>
+              <li
+                id="header-nav-item--theme"
+                class="header-nav-item light-theme"
+              >
+                <a
+                  ><i id="header-nav-item--theme-icon" class="fas fa-moon"></i
+                  ><span id="header-nav-item--theme-name">Chế độ tối</span></a
+                >
+              </li>
+            </ul>
+            <a id="header-search-icon" class="header-nav-item-search"
+              ><i class="header-search-icon fas fa-search"></i
+            ></a>
+            <a id="header-nav__menu-icon" class="header-nav__menu-icon"
+              ><i class="header-menu-icon fas fa-bars"></i
+            ></a>
+          </div>
+        </div>
+        <div id="header-bottom" class="header-bottom">
+          <div class="header-bottom__search">
+            <input
+              autofocus
+              type="text"
+              id="search__input"
+              class="search__input"
+            />
+
+            <i id="icon-hide-search" class="fas fa-times"></i>
+          </div>
+          <div id="header-bottom__result" class="header-bottom__result">
+            <!-- Product-search -->
+            <a class="header-bottom__result-item" href="">
+              <div
+                class="result-img"
+                style="
+                  background-image: url('https://cuakinhre.com/wp-content/uploads/2019/08/gia-cua-kinh-cuong-luc-khung-nhom-2.jpg');
+                "
+              ></div>
+              <div class="result-content">
+                <div class="result-content__name">Cửa kính nhôm cao cấp</div>
+                <div class="result-content__type">
+                  Phân loại: Cửa nhôm xifang
+                </div>
+                <div class="result-content__price">2.000.000</div>
+              </div>
+            </a>
+            <a class="header-bottom__result-item" href="">
+              <div
+                class="result-img"
+                style="
+                  background-image: url('https://cuakinhre.com/wp-content/uploads/2019/08/gia-cua-kinh-cuong-luc-khung-nhom-2.jpg');
+                "
+              ></div>
+              <div class="result-content">
+                <div class="result-content__name">Cửa kính nhôm cao cấp</div>
+                <div class="result-content__type">
+                  Phân loại: Cửa nhôm xifang
+                </div>
+                <div class="result-content__price">2.000.000</div>
+              </div>
+            </a>
+            <a class="header-bottom__result-item" href="">
+              <div
+                class="result-img"
+                style="
+                  background-image: url('https://cuakinhre.com/wp-content/uploads/2019/08/gia-cua-kinh-cuong-luc-khung-nhom-2.jpg');
+                "
+              ></div>
+              <div class="result-content">
+                <div class="result-content__name">Cửa kính nhôm cao cấp</div>
+                <div class="result-content__type">
+                  Phân loại: Cửa nhôm xifang
+                </div>
+                <div class="result-content__price">2.000.000</div>
+              </div>
+            </a>
+          </div>
+        </div>
+      </header>
+      <div id="container">
+          <!-- Product list -->
+        <div class="pro-list grid">
+            <div class="pro-list__item">
+                <div class="pro-list__item__img">
+                    <img src="https://www.devsnews.com/wp/retbo/wp-content/uploads/2021/01/12.jpg" alt="">
+                    <div class="pro-list__item__action-list">
+                        <a class="pro-list__item__action pro-list__item__action--cart"><i class="fas fa-cart-arrow-down"></i></a>
+                        <a class="pro-list__item__action pro-list__item__action--view"><i class="far fa-eye"></i></a>
+                        <a class="pro-list__item__action pro-list__item__action--like"><i class="far fa-heart"></i></a>
+                    </div>
+                </div>
+                <div class="pro-list__item__name">Super Thick Cotton Super Thick</div>
+                <div class="pro-list__item__rating">
+                    <i class="fas fa-star fa-star-check"></i>
+                    <i class="fas fa-star fa-star-check"></i>
+                    <i class="fas fa-star fa-star-check"></i>
+                    <i class="fas fa-star fa-star-check"></i>
+                    <i class="fas fa-star"></i>
+                </div>
+                <div class="pro-list__item__price">
+                    5.000.000
+                </div>
+            </div>
+            <div class="pro-list__item pro-list__item--sale">
+                <div class="pro-list__item__img">
+                    <img src="https://phuongtrangwindow.com/wp-content/uploads/2020/05/xep-truot.jpg" alt="">
+                    <div class="pro-list__item__action-list">
+                        <a class="pro-list__item__action pro-list__item__action--cart"><i class="fas fa-cart-arrow-down"></i></a>
+                        <a class="pro-list__item__action pro-list__item__action--view"><i class="far fa-eye"></i></a>
+                        <a class="pro-list__item__action pro-list__item__action--like"><i class="far fa-heart"></i></a>
+                    </div>
+                </div>
+                <div class="pro-list__item__name">Super Thick Cotton Super Thick</div>
+                <div class="pro-list__item__rating">
+                    <i class="fas fa-star fa-star-check"></i>
+                    <i class="fas fa-star fa-star-check"></i>
+                    <i class="fas fa-star fa-star-check"></i>
+                    <i class="fas fa-star fa-star-check"></i>
+                    <i class="fas fa-star"></i>
+                </div>
+                <div class="pro-list__item__price">
+                    5.000.000
+                </div>
+            </div>
+            <div class="pro-list__item">
+                <div class="pro-list__item__img">
+                    <img src="https://nhomkinhxingfa.com/wp-content/uploads/2020/11/chuyen-muc-nhom-kinh-cao-cap.jpg" alt="">
+                    <div class="pro-list__item__action-list">
+                        <a class="pro-list__item__action pro-list__item__action--cart"><i class="fas fa-cart-arrow-down"></i></a>
+                        <a class="pro-list__item__action pro-list__item__action--view"><i class="far fa-eye"></i></a>
+                        <a class="pro-list__item__action pro-list__item__action--like"><i class="far fa-heart"></i></a>
+                    </div>
+                </div>
+                <div class="pro-list__item__name">Super Thick Cotton Super Thick</div>
+                <div class="pro-list__item__rating">
+                    <i class="fas fa-star fa-star-check"></i>
+                    <i class="fas fa-star fa-star-check"></i>
+                    <i class="fas fa-star fa-star-check"></i>
+                    <i class="fas fa-star fa-star-check"></i>
+                    <i class="fas fa-star"></i>
+                </div>
+                <div class="pro-list__item__price">
+                    5.000.000
+                </div>
+            </div>
+            <div class="pro-list__item">
+                <div class="pro-list__item__img">
+                    <img src="https://www.devsnews.com/wp/retbo/wp-content/uploads/2021/01/12.jpg" alt="">
+                    <div class="pro-list__item__action-list">
+                        <a class="pro-list__item__action pro-list__item__action--cart"><i class="fas fa-cart-arrow-down"></i></a>
+                        <a class="pro-list__item__action pro-list__item__action--view"><i class="far fa-eye"></i></a>
+                        <a class="pro-list__item__action pro-list__item__action--like"><i class="far fa-heart"></i></a>
+                    </div>
+                </div>
+                <div class="pro-list__item__name">Super Thick Cotton Super Thick</div>
+                <div class="pro-list__item__rating">
+                    <i class="fas fa-star fa-star-check"></i>
+                    <i class="fas fa-star fa-star-check"></i>
+                    <i class="fas fa-star fa-star-check"></i>
+                    <i class="fas fa-star fa-star-check"></i>
+                    <i class="fas fa-star"></i>
+                </div>
+                <div class="pro-list__item__price">
+                    5.000.000
+                </div>
+            </div>
+            <div class="pro-list__item">
+                <div class="pro-list__item__img">
+                    <img src="https://www.devsnews.com/wp/retbo/wp-content/uploads/2021/01/12.jpg" alt="">
+                    <div class="pro-list__item__action-list">
+                        <a class="pro-list__item__action pro-list__item__action--cart"><i class="fas fa-cart-arrow-down"></i></a>
+                        <a class="pro-list__item__action pro-list__item__action--view"><i class="far fa-eye"></i></a>
+                        <a class="pro-list__item__action pro-list__item__action--like"><i class="far fa-heart"></i></a>
+                    </div>
+                </div>
+                <div class="pro-list__item__name">Super Thick Cotton Super Thick</div>
+                <div class="pro-list__item__rating">
+                    <i class="fas fa-star fa-star-check"></i>
+                    <i class="fas fa-star fa-star-check"></i>
+                    <i class="fas fa-star fa-star-check"></i>
+                    <i class="fas fa-star fa-star-check"></i>
+                    <i class="fas fa-star"></i>
+                </div>
+                <div class="pro-list__item__price">
+                    5.000.000
+                </div>
+            </div>
+        </div>
+
+
+
+        <footer>
+          <div class="footer grid" id="footer">
+            <div class="footer__column">
+              <h2 class="footer__column-title">Danh mục sản phẩm</h2>
+              <ul class="footer__column-list">
+                <li class="footer__column-item"><a href="">Cửa kính</a></li>
+                <li class="footer__column-item"><a href="">Cửa nhôm</a></li>
+                <li class="footer__column-item"><a href="">Cửa nhôm</a></li>
+                <li class="footer__column-item"><a href="">Cửa nhôm</a></li>
+                <li class="footer__column-item"><a href="">Cửa nhôm</a></li>
+                <li class="footer__column-item"><a href="">Cửa nhôm</a></li>
+              </ul>
+            </div>
+            <div class="footer__column">
+              <h2 class="footer__column-title">Truy cập nhanh</h2>
+              <ul class="footer__column-list">
+                <li class="footer__column-item"><a href="">Liên hệ</a></li>
+                <li class="footer__column-item"><a href="">Về chúng tôi</a></li>
+              </ul>
+            </div>
+            <div class="footer__column">
+              <h2 class="footer__column-title">Liên hệ</h2>
+              <ul class="footer__column-list">
+                <li class="footer__column-item">
+                  <a href=""
+                    ><i class="footer__column-item__icon fas fa-map-marker"></i
+                    >Linh Trung, Thủ Đức</a
+                  >
+                </li>
+                <li class="footer__column-item">
+                  <a href=""
+                    ><i class="footer__column-item__icon fas fa-mobile"></i>+84
+                    123456789</a
+                  >
+                </li>
+                <li class="footer__column-item">
+                  <a href=""
+                    ><i class="footer__column-item__icon fas fa-phone"></i>+84
+                    123456789</a
+                  >
+                </li>
+                <li class="footer__column-item">
+                  <a href=""
+                    ><i
+                      class="footer__column-item__icon fas fa-envelope-open"
+                    ></i
+                    >lienntb@gmail.com</a
+                  >
+                </li>
+                <li class="footer__column-item">
+                  <a href=""
+                    ><i
+                      class="footer__column-item__icon fas fa-envelope-open"
+                    ></i
+                    >lienntb@gmail.com</a
+                  >
+                </li>
+              </ul>
+            </div>
+            <div class="footer__column">
+              <h2 class="footer__column-title">Thông tin mới nhất</h2>
+              <span>Miễn phí vận chuyển cho khách hàng mua hàng đầu tiên</span>
+              <div class="footer__send-mail">
+                <input
+                  class="footer__send-mail__input"
+                  type="email"
+                  placeholder="Nhập mail"
+                />
+                <a href="" class="footer__btn-send-mail btn"
+                  ><i class="fab fa-telegram-plane"></i
+                ></a>
+              </div>
+              <h2 class="footer__column-title">Theo dõi chúng tôi trên:</h2>
+              <div class="footer-social-media">
+                <a href="" class="footer-social-media__icon icon-fb"
+                  ><i class="fab fa-facebook-f"></i
+                ></a>
+                <a href="" class="footer-social-media__icon icon-tw"
+                  ><i class="fab fa-twitter"></i
+                ></a>
+                <a href="" class="footer-social-media__icon icon-gl"
+                  ><i class="fab fa-google"></i
+                ></a>
+              </div>
+              <span id="authors">Design by LuongHC & NhanPT</span>
+            </div>
+          </div>
+        </footer>
+      </div>
+    </div>
+  </body>
+  <script src="./assets/js/jquery.min.js"></script>
+  <script src="./assets/js/main.js"></script>
+  <script src="./assets/js/animateScroll.js"></script>
+  <script>
+    AOS.init({ duration: 1200 });
+  </script>
+</html>
